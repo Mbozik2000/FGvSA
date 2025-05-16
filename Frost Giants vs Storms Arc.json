@@ -1,0 +1,2441 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FrostGiantsvsStormsArc",
+				"abbreviation": "FGvSA",
+				"full": "Frost Giants vs Storms Arc",
+				"version": "1.0.0",
+				"authors": [
+					"lVlitchell"
+				],
+				"convertedBy": [
+					"lVlitchell"
+				],
+				"color": "3169a5"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Captain Aulruick Thoster",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 256,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": {
+					"choose": [
+						"humanoid",
+						"fiend"
+					]
+				},
+				"tags": [
+					"demon scion"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"Studded Leather",
+						"Suave Defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 21,
+			"save": {
+				"wis": "+5",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5",
+				"stealth": "+12",
+				"persuasion": "+9",
+				"sleight of hand": "+12"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"psychic"
+			],
+			"languages": [
+				"Common",
+				"Auran",
+				"telepathy 30 ft."
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warlock casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 15}): "
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell guidance}",
+						"{@spell levitate}",
+						"{@spell mage armor} (self only)",
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell arcane gate}",
+							"{@spell detect thoughts}",
+							"{@spell true seeing}"
+						]
+					},
+					"spells": {
+						"3": {
+							"spells": [
+								"{@spell clairvoyance|XPHB}",
+								"{@spell counterspell|XPHB}",
+								"{@spell dispel magic|XPHB}",
+								"{@spell dissonant whispers|XPHB}",
+								"{@spell dominate person|XPHB}",
+								"{@spell Evard's black tentacles|XPHB}",
+								"{@spell phantasmal force|XPHB}",
+								"{@spell sending|XPHB}",
+								"{@spell shatter|XPHB}",
+								"{@spell Tasha's hideous laughter|XPHB}",
+								"{@spell telekinesis|XPHB}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Whispering Aura",
+					"entries": [
+						"At the start of each of the warlock's turns, each creature of its choice within 10 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that the warlock isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Suave Defense",
+					"entries": [
+						"While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
+					]
+				},
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"When the swashbuckler makes a melee attack against a creature on its turn, that creature can’t make opportunity attacks against the swashbuckler for the rest of the turn, regardless of whether the attack hits."
+					]
+				},
+				{
+					"name": "Rakish Audacity",
+					"entries": [
+						"The swashbuckler adds its Charisma modifier to initiative rolls.",
+						"Additionally, the swashbuckler can deal Sneak Attack damage to a creature within 5 feet if no other creatures are within 5 feet of it and it doesn’t have disadvantage on the attack roll. The swashbuckler doesn’t need advantage on the roll to use Sneak Attack in this case."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The warlock makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Venom Edge",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d10 + 3}) piercing damage plus 10 ({@damage 3d6}) psychic damage. If the sword is coated in venom via the Coat Blade bonus action, it also deals an additional 11 ({@damage 2d10}) poison damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/warlock-of-the-great-old-one.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AU",
+				"TP"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Warlock of the Great Old One",
+				"source": "MPMM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Warlock of the Great Old One.webp"
+						},
+						"credit": "Valera Lutfullina"
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as Aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the chaos and wickedness inspired by bizarre beings from beyond the stars."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Warlocks",
+						"entries": [
+							"Warlocks gain arcane might through magical pacts with mysterious entities. While some use their abilities to serve the sources of their power, others use them to undermine or even destroy these entities."
+						]
+					}
+				]
+			},
+			"bonus": [
+				{
+					"name": "Lightfooted",
+					"entries": [
+						"The swashbuckler takes the Dash or Disengage action."
+					]
+				},
+				{
+					"name": "Elegant Maneuver",
+					"entries": [
+						"The swashbuckler gains advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check it makes before the end of the turn."
+					]
+				},
+				{
+					"name": "Coat Blade",
+					"entries": [
+						"The spinning discs on the sword spin to channel poison into the channels of the blade. Once done, any attacks made with the Venom Edge before the end of your next turn deal an additional {@damage 2d10} poison damage."
+					]
+				},
+				{
+					"name": "Awakened Mind",
+					"entries": [
+						"As a bonus action, the warlock targets one creature it can see within 30 feet. The warlock and the target can communicate telepathically with each other while within a number of miles equal to the warlock’s Charisma modifier (minimum of 1 mile). The connection lasts for a number of minutes equal to the warlock’s level, ending early if the warlock uses this feature again. Both creatures must share at least one language to understand each other."
+					]
+				}
+			],
+			"actionHeader": [
+				"The rogue deals an extra 5d6 damage when it hits a target with a finesse or ranged weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the rogue that isn’t incapacitated and the rogue doesn’t have disadvantage on the attack roll. The extra damage is of the same type as the weapon’s."
+			],
+			"alias": [
+				"THOSTER",
+				"AULRUICK"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://imgur.com/c11PDNP.png"
+			},
+			"damageTags": [
+				"I",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "First Mate Rumstock \"RedruM\"",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 242,
+			"size": [
+				"S",
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"unarmored",
+						"suave defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 10,
+			"dex": 22,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"cha": "+8",
+				"dex": "+10"
+			},
+			"skill": {
+				"acrobatics": "+14",
+				"perception": "+6",
+				"sleight of hand": "+10",
+				"stealth": "+14",
+				"performance": "+12"
+			},
+			"passive": 16,
+			"languages": [
+				"Common",
+				"Auran"
+			],
+			"gear": [
+				"pistol|xphb",
+				"rapier|xphb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The pirate makes three attacks, using Rapier or Pistol in any combination."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}13 ({@damage 2d8 + 4}) Piercing damage, and the pirate has {@variantrule Advantage|XPHB} on the next attack roll it makes before the end of this turn."
+					]
+				},
+				{
+					"name": "Pistol",
+					"entries": [
+						"{@atkr r} {@hit 7}, range 30/90 ft. {@h}15 ({@damage 2d10 + 4}) Piercing damage. If the pistol's gunpowder gets wet, the gun cannot be fired again again for the next 10 minutes, or unless a user takes a minute to dry it and reload."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Drunken Technique",
+					"entries": [
+						"The pirate makes two unarmed strikes. Immediately after taking this action, the monk gains the benefits of the Disengage action, and its walking speed increases by 10 feet until the end of the current turn."
+					]
+				},
+				{
+					"name": "Lightfooted",
+					"entries": [
+						"The swashbuckler takes the Dash or Disengage action."
+					]
+				},
+				{
+					"name": "First Mate's Charm",
+					"entries": [
+						"{@actSave wis} {@dc 14}, one creature the pirate can see within 30 feet. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the start of the pirate's next turn. It treats the pirate and the rest of its allies as non-hostile."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Riposte",
+					"entries": [
+						"{@actTrigger} The pirate is hit by a melee attack roll while holding a weapon. {@actResponse} The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapier attack against the triggering creature if within range."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"implements",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AU"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Pirate Captain",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"entries": [
+							"Pirate captains command crews of pirates, dictating their destinations and targets. Captains cultivate fearsome and theatrical reputations, painting themselves as larger-than-life characters to terrorize their foes, ensure the obedience of their crews, and attract followers to their banner. Many have colorful nicknames inspired by signature traits and deeds."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Pirates",
+						"entries": [
+							"{@i Freebooters and Fortune Hunters}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "Individual, {@table Random Magic Items - Implements|XDMG|Implements}"
+									}
+								]
+							},
+							"The term \"pirate\" encompasses a broad range of seafarers, including vicious sea rovers, dogged privateers, cursed treasure hunters, and others who seek riches and fame on the seas.",
+							"Pirates might be allies, foes, wild cards, or some combination thereof. While they are the bane of merchants and coastal communities, they know secrets of the sea and how to avoid aquatic threats. More unusual pirates set their sights beyond the waves, using airships, spelljamming vessels, plane-shifting craft, or stranger vehicles to explore and raid incredible realms.",
+							{
+								"type": "entries",
+								"name": "Pirate Flags",
+								"entries": [
+									"To terrify opponents and spread their reputations, pirate crews fly distinctive flags. Roll twice on or choose results from the Pirate Flags table to inspire what flag a pirate crew sails under.",
+									{
+										"type": "table",
+										"caption": "Pirate Flags",
+										"isNameGenerator": true,
+										"colLabels": [
+											"1d8",
+											"The Flag Shows A...",
+											"With..."
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-5",
+											"col-5"
+										],
+										"rows": [
+											[
+												"1",
+												"Buccaneer",
+												"A captain's hat"
+											],
+											[
+												"2",
+												"Dragon",
+												"Crossbones"
+											],
+											[
+												"3",
+												"Fiend",
+												"Crossed blades"
+											],
+											[
+												"4",
+												"Goat",
+												"An eye patch"
+											],
+											[
+												"5",
+												"Kraken",
+												"Lightning bolts"
+											],
+											[
+												"6",
+												"Merfolk",
+												"A mug of ale"
+											],
+											[
+												"7",
+												"Skull",
+												"A tattoo"
+											],
+											[
+												"8",
+												"Whale",
+												"A treasure chest"
+											]
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Pirates.webp"
+						},
+						"credit": "Alexandre Honoré"
+					}
+				]
+			},
+			"attachedItems": [
+				"pistol|dmg",
+				"rapier|phb"
+			],
+			"trait": [
+				{
+					"name": "Suave Defense",
+					"entries": [
+						"While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://imgur.com/WiRKCiN.png"
+			},
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Grovekeeper Gharesi",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 354,
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 168,
+				"formula": "16d12 + 64"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 18,
+			"int": 10,
+			"wis": 18,
+			"cha": 16,
+			"skill": {
+				"athletics": "+10",
+				"perception": "+10",
+				"survival": "+7",
+				"insight": "+7"
+			},
+			"passive": 20,
+			"cr": "7",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Gharesi makes two Fist attacks."
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 10 ft. {@h}15 ({@damage 3d10 + 6}) Bludgeoning damage."
+					]
+				},
+				{
+					"name": "Verdant Lash",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 30 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage, plus 7 ({@damage 2d6}) poison damage, and the target must succeed on a {@dc 15} Strength saving throw or be pulled up to 10 feet closer to the professor."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Leap",
+					"entries": [
+						"Gharesi jumps up to 30 feet by spending 10 feet of movement."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-ape.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA",
+				"RCH",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Giant Ape",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Animals",
+						"entries": [
+							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Giant Ape and Giant Bat.webp"
+						},
+						"credit": "Dario Jelusic"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Hills and Mountains.webp"
+						},
+						"title": "A druid calls on animals of the hills and mountains to aid her cause"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Aquatic.webp"
+						},
+						"title": "Aquatic animals swim alongside a druid exploring the sea"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Rainforest.webp"
+						},
+						"title": "Inhabitants of the rain forest answer a druid's summons"
+					}
+				]
+			},
+			"languages": [
+				"Auran",
+				"Common,"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft|XPHB}",
+								"{@spell spare the dying|XPHB}"
+							]
+						}
+					},
+					"daily": {
+						"1e": [
+							"{@spell cone of cold|XPHB}",
+							"{@spell forcecage|XPHB}",
+							"{@spell greater restoration|XPHB}",
+							"{@spell insect plague|XPHB}",
+							"{@spell mass cure wounds|XPHB}",
+							"{@spell revivify|XPHB}"
+						],
+						"2e": [
+							"{@spell ice storm|XPHB}",
+							"{@spell lesser restoration|XPHB}",
+							"{@spell mass healing word|XPHB}",
+							"{@spell pass without trace|XPHB}",
+							"{@spell plant growth|XPHB}"
+						],
+						"3e": [
+							"{@spell cure wounds|XPHB}",
+							"{@spell faerie fire|XPHB}",
+							"{@spell healing word|XPHB}",
+							"{@spell moonbeam|XPHB}",
+							"{@spell thunderwave|XPHB}",
+							"{@spell wither and bloom|SCC}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"save": {
+				"str": "+10",
+				"wis": "+7"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://imgur.com/EIe63w0.png"
+			},
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"N",
+				"P",
+				"R",
+				"T"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Zrell D'Moda Graviturgist Wizard",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 264,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				13,
+				{
+					"ac": 16,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 110,
+				"formula": "20d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 20,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"int": "+9",
+				"wis": "+5"
+			},
+			"passive": 15,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"any four languages"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The wizard casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell dancing lights|EGW}",
+						"{@spell mage armor|XPHB}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}",
+						"{@spell sapping sting|EGW}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell bestow curse}",
+							"{@spell dimension door}",
+							"{@spell dispel magic|XPHB}",
+							"{@spell gravity sinkhole|EGW}",
+							"{@spell mage armor}",
+							"{@spell vortex warp|SCC}"
+						],
+						"1e": [
+							"{@spell cone of cold|XPHB}",
+							"{@spell dark star|EGW}",
+							"{@spell gravity fissure|EGW}",
+							"{@spell telekinesis|XPHB}"
+						],
+						"3e": [
+							"{@spell counterspell|XPHB}",
+							"{@spell fortune's favor|EGW}",
+							"{@spell misty step|XPHB}",
+							"{@spell pulse wave|EGW}",
+							"{@spell shatter|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wizard makes three Arcane Burst attacks."
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk ms,rs} {@hit 7} to hit, reach 5 ft. or range 120 ft., one target. {@h}25 ({@damage 4d10 + 3}) necrotic damage."
+					]
+				},
+				{
+					"name": "Gravitic Well",
+					"entries": [
+						"As an action, the wizard emits a powerful field of gravitational energy that lasts for 1 minute or until the wizard's {@status Concentration|XPHB} ends (as if {@status Concentration|XPHB|Concentrating} on a spell). For the duration, whenever a hostile creature starts its turn within 30 feet of the wizard, it must succeed on a {@dc 16} Strength saving throw or take {@damage 2d10} force damage and have its speed reduced to 0 until the start of its next turn. On a successful save, the creature takes half as much damage, and every foot it moves that turn costs 3 feet of movement."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Gravitic Shift {@recharge 5}",
+					"entries": [
+						"The wizard magically alters the weight of one object or creature it can see within 30 feet. The target must be Huge or smaller. The target’s weight is either halved or doubled (the creature's choice) for up to 1 minute or until the effect ends (as if {@status Concentration|XPHB|Concentrating} on a spell).",
+						"While the target’s weight is halved, its speed increases by 10 feet, it can jump twice as far, and it has disadvantage on Strength checks and Strength saving throws. While the target’s weight is doubled, its speed is reduced by 10 feet, and it has advantage on Strength checks and Strength saving throws."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/necromancer.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Necromancer Wizard",
+				"source": "MPMM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Necromancer Wizard.webp"
+						},
+						"credit": "Randy Vargas"
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Necromancers study the interaction of life, death, and undeath. Some necromancers dig up or purchase corpses to create Undead servitors. A few instead use their powers for good, hunting Undead."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Wizards",
+						"entries": [
+							"Wizards pursue magical power through the study of arcane texts. Some travel the world searching for esoteric tomes while others train lesser wizards or collaborate with colleagues to create new spells."
+						]
+					}
+				]
+			},
+			"miscTags": [
+				"RA",
+				"MA"
+			],
+			"trait": [
+				{
+					"name": "Gravitic Manipulation",
+					"entries": [
+						"Whenever the wizard casts a spell on another creature, it can move the target up to 5 feet to an unoccupied space of the wizard’s choice, provided the target is willing to move, the spell hits with an attack, or the target fails its saving throw against the spell."
+					]
+				},
+				{
+					"name": "Violent Attraction",
+					"entries": [
+						"When a creature the wizard can see within 60 feet hits with a weapon attack, the wizard can use its reaction to increase the attack’s velocity. The target of the attack takes an additional {@damage 1d10} damage of the weapon’s type.",
+						"Alternatively, when a creature within 60 feet takes damage from falling, the wizard can use its reaction to intensify the impact. The creature takes an additional {@damage 2d10} damage."
+					]
+				}
+			],
+			"skill": {
+				"arcana": "+13",
+				"athletics": "+5",
+				"acrobatics": "+7",
+				"perception": "+5"
+			},
+			"reaction": [
+				{
+					"name": "Reactive Disruption (1/Day or with a 1st-Level Spell Slot).",
+					"entries": [
+						"When a creature the wizard can see within 60 feet succeeds on an attack roll, ability check, or saving throw, the wizard can use its reaction to force the creature to reroll the {@dice d20} and use the lower result.",
+						"The wizard then chooses a different creature it can see within 60 feet (including itself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can benefit from this feature only once at a time."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://imgur.com/5LedML0.png"
+			},
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"O",
+				"T"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Jorge Pythagoras, Bosun",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 247,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Vedalken"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 35,
+				"swim": 35
+			},
+			"str": 16,
+			"dex": 19,
+			"con": 13,
+			"int": 11,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"athletics": "+5",
+				"acrobatics": "+6",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Aquan",
+				"Vedalken"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Cargo Hauler",
+					"entries": [
+						"The pirate has advantage on Strength checks."
+					]
+				},
+				{
+					"name": "Sea Legs",
+					"entries": [
+						"The pirate has advantage on ability checks and saving throws to resist being knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Vedalken Dispassion",
+					"entries": [
+						"The vedalken has advantage on Intelligence, Wisdom, and Charisma saving throws."
+					]
+				},
+				{
+					"name": "Surge of Effort (1/Short Rest)",
+					"entries": [
+						"On its turn, the creature can take one additional action, other than the Magic action. It can’t use this feature again until it finishes a short or long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The pirate makes three weapon attacks."
+					]
+				},
+				{
+					"name": "Poisonous Pistol",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, range 30/90 ft., one target. {@h}9 ({@damage 1d10 + 3}) piercing damage, plus 11 ({@damage 2d10}) poison damage."
+					]
+				},
+				{
+					"name": "Hooked Sword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 3}) slashing damage, and the target is {@condition grappled} (escape {@dc 17})."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"AQ"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"name": "Pirate Bosun",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"The bosun (or boatswain) is tasked with organizing the cargo and crew aboard a ship. Bosuns are capable fighters whose experience with hauling cargo and delivering beatings make them tough opponents. Foul Frithoff in The Sinister Secret of Saltmarsh is the bosun who protects the cargo aboard the smugglers' ship. Ever since a bad accident, he has worn a hook at the end of one arm in place of a hand."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"bonus": [
+				{
+					"name": "Second Wind (2/day)",
+					"entries": [
+						"As a bonus action, the fighter can regain {@dice 1d10 + 10} hit points. The fighter regains one use of this feature after finishing a short rest and all uses after finishing a long rest."
+					]
+				}
+			],
+			"save": {
+				"dex": "+6",
+				"str": "+5"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://imgur.com/zpPyOFh.png"
+			},
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Frost Giant Servant",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 187,
+			"immune": [
+				"cold"
+			],
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two greatclub attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"greatclub|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone"
+			],
+			"token": {
+				"name": "Frost Giant Servant",
+				"source": "TftYP"
+			}
+		},
+		{
+			"name": "Frost Giant",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 124,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 149,
+				"formula": "13d12 + 65"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 23,
+			"dex": 9,
+			"con": 21,
+			"int": 9,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"con": "+8",
+				"wis": "+3",
+				"cha": "+4"
+			},
+			"skill": {
+				"athletics": "+9",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "8",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two attacks, using Frost Axe or Great Bow in any combination."
+					]
+				},
+				{
+					"name": "Frost Axe",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 10 ft. {@h}19 ({@damage 2d12 + 6}) Slashing damage plus 9 ({@damage 2d8}) Cold damage."
+					]
+				},
+				{
+					"name": "Great Bow",
+					"entries": [
+						"{@atkr r} {@hit 9}, range 150/600 ft. {@h}17 ({@damage 2d10 + 6}) Piercing damage plus 7 ({@damage 2d6}) Cold damage, and the target's {@variantrule Speed|XPHB} decreases by 10 feet until the end of its next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "War Cry {@recharge 5}",
+					"entries": [
+						"The giant or one creature of its choice that can see or hear it gains 16 ({@dice 2d10 + 5}) {@variantrule Temporary Hit Points|XPHB} and has {@variantrule Advantage|XPHB} on attack rolls until the start of the giant's next turn."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain"
+			],
+			"treasure": [
+				"armaments"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/frost-giant.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MA",
+				"RA",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant",
+				"source": "XMM"
+			},
+			"fluff": {
+				"name": "Frost Giant",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Frost Giant",
+						"entries": [
+							"{@i Giant of the Ice and Snow}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Arctic|bestiary|environment=arctic}, {@filter Mountain|bestiary|environment=mountain}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "{@table Random Magic Items - Armaments|XDMG|Armaments}"
+									}
+								]
+							},
+							"From glacial mountain heights and vast tundras rise the homes of frost giants. These giants have skin and hair of icy hues. Their natural immunity to cold allows them to flourish in places inhospitable to most other creatures. They use this resilience to aid them when hunting and in combat, bolstering their allies with chilling war cries.",
+							"Frost giants often travel far to find food and goods. This leads many to become raiders and earn violent reputations. Others live more peaceably by hunting titanic game or creating sanctuaries from the cold (frequently featuring hot springs or snowy contests). Frost giants sometimes forge partnerships with icy Fey or fire giants dwelling underground, serving as guardians to their realms in exchange for treasure, weapons, and crafts.",
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"The small folk have barely anything worth looting, so they shouldn't much mind when we take it from them."
+										],
+										"by": "Jarl Grugnur, Frost Giant"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Frost Giant.webp"
+						},
+						"credit": "Robson Michel"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Giant of Evil Water",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 146,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 172,
+				"formula": "15d12 + 75"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 21,
+			"int": 9,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"con": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Aquan",
+				"Common",
+				"Giant"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The giant can breathe air and water."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two Battleaxe attacks and one Harpoon attack."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}19 ({@damage 3d8 + 6}) slashing damage, or 22 ({@damage 3d10 + 6}) slashing damage if used with two hands, plus 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Harpoon",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 50/200 ft., one creature. {@h}14 ({@damage 2d10 + 3}) piercing damage, and the target has the {@condition grappled} condition (escape {@dc 16}). While the target is {@condition grappled} this way, its speed isn't reduced, but it can't move farther from the giant. The target takes 5 ({@damage 1d10}) slashing damage if it escapes from the grapple or if it tries and fails. The giant can grapple only one target at a time with its harpoon."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Reel In",
+					"entries": [
+						"The giant pulls the target {@condition grappled} by its Harpoon up to 20 feet toward itself."
+					]
+				}
+			],
+			"attachedItems": [
+				"battleaxe|phb"
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant of Evil Water",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Frost Giant of Evil Water",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"I learned enough about the Temple of Elemental Evil in my studies with Mordenkainen that I regard giants connected to the cult with a healthy amount of respect. When you combine a cultist's fanatical devotion with a giant's sheer power, the result can be horrifying."
+								],
+								"by": "Bigby"
+							},
+							"Though primordials of frost and ice do exist (most notably Cryonax, who is sometimes considered almost the equal of the four Princes of Elemental Evil), frost giants who turn from the gods of the Ordning to embrace Elemental Evil are more likely to serve Olhydra, the Princess of Evil Water. To these giants, water is a cruel and destructive force that finds its ultimate expression in ice. These cultists of Evil Water often hide their allegiance as long as possible while urging their communities to everincreasing depths of cruelty and violence, but if the cultists' apostasy is revealed and they are exiled, they often end up as leaders of Olhydra's cults in colder regions.",
+							"Olhydra grants these frost giants the ability to breathe underwater, and they wield armor and weapons that reflect their commitment to the cult. Their armor is outfitted with enormous crossbows that can launch barbed harpoons, which the giants use to drag enemies into or through the water."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Frost Giant of Evil Water.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Giant Ice Shaper",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 145,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "giant",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 310,
+				"formula": "27d12 + 135"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 11,
+			"wis": 19,
+			"cha": 16,
+			"save": {
+				"str": "+12",
+				"con": "+11",
+				"wis": "+10",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+12",
+				"perception": "+10"
+			},
+			"passive": 20,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Frost Rune",
+					"entries": [
+						"The giant has a frost rune inscribed on a chunk of ice or some other object in its possession. While holding or wearing the object bearing the rune, the giant can use its Ice Wolves action and Ice Armor reaction.",
+						"The object bearing the rune has AC 16; 40 hit points; and immunity to necrotic, poison, and psychic damage. The object regains all its hit points at the end of every turn, but it turns to dust if reduced to 0 hit points or when the giant dies. If the rune is destroyed, the giant can inscribe a frost rune on an object in its possession when it finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the giant fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes three attacks using Greataxe, Freezing Ray, or a combination of them."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) slashing damage plus 9 ({@damage 2d8}) cold damage."
+					]
+				},
+				{
+					"name": "Freezing Ray",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}17 ({@damage 3d8 + 4}) cold damage, and the target must make a {@dc 18} Constitution saving throw. On a failed save, the target has the {@condition restrained} condition until the end of its next turn. On a successful save, the target's speed is reduced by 10 feet until the end of its next turn."
+					]
+				},
+				{
+					"name": "Ice Wolves (Requires Frost Rune)",
+					"entries": [
+						"The giant magically summons {@dice 1d4} wolves made of ice (use the {@creature winter wolf} stat block in the Monster Manual to represent them, but they are Elementals instead of Monstrosities). The wolves appear in unoccupied spaces the giant can see within 30 feet of itself. The wolves take their turn immediately after the giant on the same initiative count, and they obey the giant's commands. The wolves gain a +6 bonus to their attack and damage rolls while they are within 30 feet of the giant. The wolves disappear after 1 minute, when the giant dies, or when the giant uses this action again."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ice Armor (Requires Frost Rune)",
+					"entries": [
+						"When a creature the giant can see makes an attack roll against it, the giant can form a coat of ice around itself, granting it a +6 bonus to its AC against that attack. After the attack hits or misses, the ice shatters, and each creature within 5 feet of the giant must succeed on a {@dc 18} Dexterity saving throw or take 13 ({@damage 3d8}) cold damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"greataxe|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Frost giants who master rune magic are known as ice shapers, and their sheer power typically contributes to a meteoric rise in the giants' ordning. Many of them end up as jarls, leading their communities, or as advisers to jarls—often the true power behind the throne. They are usually devoted to Thrym.",
+							"True to their name, these ice shapers manipulate the raw elemental energy of air and water to wield ice in both offense and defense. They summon ice elementals in the shape of wolves, cloak themselves in icy armor, and just as quickly turn that armor into a hail of deadly ice shards."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Frost Giant Ice Shaper.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Giant Everlasting One",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 131,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"patchwork armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 189,
+				"formula": "14d12 + 98"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 24,
+			"int": 9,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"str": "+11",
+				"con": "+11",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Extra Heads",
+					"entries": [
+						"The giant has a {@chance 25} chance of having more than one head. If it has more than one, it has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The giant regains 10 hit points at the start of its turn. If the giant takes acid or fire damage, this trait doesn't function at the start of its next turn. The giant dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two Greataxe or Rock attacks."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}26 ({@damage 3d12 + 7}) slashing damage, or 30 ({@damage 3d12 + 11}) slashing damage while raging."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60/240 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Vaprak's Rage (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The giant enters a rage. The rage lasts for 1 minute or until the giant is {@condition incapacitated}. While raging, the giant gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The giant has advantage on Strength checks and Strength saving throws.",
+								"When it makes a melee weapon attack, the giant gains a +4 bonus to the damage roll.",
+								"The giant has resistance to bludgeoning, piercing, and slashing damage."
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"coastal"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/frost-giant-everlasting-one.mp3"
+			},
+			"attachedItems": [
+				"greataxe|phb"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Everlasting One",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Frost Giant Everlasting One",
+				"source": "MPMM",
+				"entries": [
+					"To hold its place or rise within the ordning, a frost giant must routinely face mighty foes in single combat. Some seek out magic that will aid them, but enchanted objects can be taken or lost. True greatness relies on personal prowess. Faced with this truth, a frost giant might seek a supernatural gift from Vaprak the Destroyer.",
+					"Vaprak is a ferocious god of strength and hunger also worshiped by some ogres and trolls. He likes to tempt frost giants with dreams of glory followed by nightmares of bloody cannibalism. Those who don't shrink from such visions or report them to priests of Thrym receive more of the same. If a frost giant comes to relish these dreams and nightmares, as some do, Vaprak sets a troll upon a sacred quest to find the frost giant and meet the giant in secret. The troll offers up its own body to be devoured in Vaprak's name. Only the boldest and most determined frost giants can finish such a gory feast.",
+					"After devouring the troll sent by Vaprak, bones and all, a frost giant becomes an everlasting one, gaining tremendous strength, an ill temper, and a troll's regenerative ability. With these gifts, the frost giant can swiftly claim the title of jarl and easily fend off rivals for decades. However, if the frost giant doesn't give enough honor to Vaprak or fails to heed Vaprak's visions, injuries the frost giant sustains heal wrong, resulting in discolored skin; warty scars; and vestigial body parts, such as extra digits, limbs, and even heads. The touch of Vaprak can no longer be hidden then, and the everlasting one is either killed or exiled by their clan. Sometimes small communities of everlasting ones gather and even reproduce, passing the \"blessing\" and worship of Vaprak from one generation to the next."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Frost Giant Everlasting One.webp"
+						},
+						"credit": "Chris Seaman"
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Giant Skald",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 124,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Runescribed Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 70",
+				"average": 161
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 21,
+			"int": 15,
+			"wis": 13,
+			"cha": 18,
+			"save": {
+				"con": "+9",
+				"wis": "+5",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "10",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two attacks with its twisted ivory warhorn, one of which it may replace with a use of its compose verse ability."
+					]
+				},
+				{
+					"name": "Twisted Ivory Warhorn",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 10 ft. {@h}19 ({@damage 3d6 + 6}) Bludgeoning damage and the target is pushed 5 ft. away.",
+						"Each other creature within 5 feet of the target must succeed on a {@dc 17} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Compose Verse",
+					"entries": [
+						"The frost giant declaims a verse of battle-poetry. Up to two friendly frost giants within 30 ft. that can hear it may use their reaction to make a melee attack."
+					]
+				},
+				{
+					"name": "Recite Refrain",
+					"entries": [
+						"Each creature that understands Giant and can hear the giant within 30 ft. gains 10 temporary hit points. While a creature has these temporary hit points, its attacks score a critical on a 19-20."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain"
+			],
+			"treasure": [
+				"armaments"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/frost-giant.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MA",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant",
+				"source": "XMM"
+			},
+			"fluff": {
+				"name": "Frost Giant",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Frost Giant",
+						"entries": [
+							"{@i Giant of the Ice and Snow}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Arctic|bestiary|environment=arctic}, {@filter Mountain|bestiary|environment=mountain}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "{@table Random Magic Items - Armaments|XDMG|Armaments}"
+									}
+								]
+							},
+							"From glacial mountain heights and vast tundras rise the homes of frost giants. These giants have skin and hair of icy hues. Their natural immunity to cold allows them to flourish in places inhospitable to most other creatures. They use this resilience to aid them when hunting and in combat, bolstering their allies with chilling war cries.",
+							"Frost giants often travel far to find food and goods. This leads many to become raiders and earn violent reputations. Others live more peaceably by hunting titanic game or creating sanctuaries from the cold (frequently featuring hot springs or snowy contests). Frost giants sometimes forge partnerships with icy Fey or fire giants dwelling underground, serving as guardians to their realms in exchange for treasure, weapons, and crafts.",
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"The small folk have barely anything worth looting, so they shouldn't much mind when we take it from them."
+										],
+										"by": "Jarl Grugnur, Frost Giant"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Frost Giant.webp"
+						},
+						"credit": "Robson Michel"
+					}
+				]
+			},
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "Attacks made without Advantage"
+				}
+			],
+			"reaction": [
+				{
+					"name": "Frosthunder Sounding (1/Day)",
+					"entries": [
+						"As a reaction to being reduced below 81 hit points, the giant sounds its warhorn, releasing a blast of sound and cold in a 30- foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 27 ({@damage 6d8}) thunder damage on a failed save, or half as much damage on a successful one. ",
+						"The ground in the area sprouts icy spikes, becoming difficult terrain for the next minute. When a Large or smaller creature moves into or within the area, it takes 5 ({@damage 2d4}) piercing damage for every 5 feet it travels."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Inspiring Prowess",
+					"entries": [
+						"Whenever the giant reduces a creature to 0 hit points with an attack, each creature within 30 ft. makes attacks at advantage until the end of the giant's next turn."
+					]
+				},
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The giant can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Frost Giant Shaper Initiate",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 145,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "giant",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|PHB}",
+						"{@item shield|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 80",
+				"average": 184
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 11,
+			"wis": 19,
+			"cha": 16,
+			"save": {
+				"str": "+10",
+				"con": "+9",
+				"wis": "+8",
+				"cha": "+7"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "12",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two attacks using its Greataxe, Freezing Ray, or a combination of them."
+					]
+				},
+				{
+					"name": "Frostshatter Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d12 + 6}) cold damage. On a critical hit, the creature is instead pushed 30 feet away and knocked {@condition prone}.",
+						"Each other creature within 5 feet of the target must succeed on a {@dc 18} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Ice Bolt",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 120 ft., one target. {@h}17 ({@damage 3d8 + 4}) cold damage, and the target's speed is reduced by 10 feet until the end of the frost giant's next turn."
+					]
+				},
+				{
+					"name": "Ice Wolves (Requires Frost Rune)",
+					"entries": [
+						"The giant magically summons {@dice 1d4} wolves made of ice (use the {@creature winter wolf} stat block in the Monster Manual to represent them, but they are Elementals instead of Monstrosities). The wolves appear in unoccupied spaces the giant can see within 30 feet of itself. The wolves take their turn immediately after the giant on the same initiative count, and they obey the giant's commands. The wolves gain a +6 bonus to their attack and damage rolls while they are within 30 feet of the giant. The wolves disappear after 1 minute, when the giant dies, or when the giant uses this action again."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Frost giants who master rune magic are known as ice shapers, and their sheer power typically contributes to a meteoric rise in the giants' ordning. Many of them end up as jarls, leading their communities, or as advisers to jarls—often the true power behind the throne. They are usually devoted to Thrym.",
+							"True to their name, these ice shapers manipulate the raw elemental energy of air and water to wield ice in both offense and defense. They summon ice elementals in the shape of wolves, cloak themselves in icy armor, and just as quickly turn that armor into a hail of deadly ice shards."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Frost Giant Ice Shaper.webp"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"daily": {
+						"1e": [
+							"{@spell wall of ice|XPHB}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"reaction": [
+				{
+					"name": "Bitter Retort",
+					"entries": [
+						"As a reaction to being attacked by a creature within 15 feet of it, the frost giant may force the attacker to make a {@dc 17} Constitution saving throws. On a failed save, the attacker gains 10 ({@dice 3d6}) temporary hit points that last for one minute. While a creature has these temporary hit points, it is {@condition Paralyzed|XPHB} and has vulnerability to fire damage."
+					]
+				}
+			],
+			"damageTags": [
+				"C"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Frost Giant Jarl",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 145,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "giant",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Runescar Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 80",
+				"average": 184
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 21,
+			"int": 15,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"cha": "+10",
+				"con": "+11",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+13",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Frost Rune",
+					"entries": [
+						"The giant has a frost rune inscribed on a chunk of ice or some other object in its possession. While holding or wearing the object bearing the rune, the giant can use its Ice Wolves action and Ice Armor reaction.",
+						"The object bearing the rune has AC 16; 40 hit points; and immunity to necrotic, poison, and psychic damage. The object regains all its hit points at the end of every turn, but it turns to dust if reduced to 0 hit points or when the giant dies. If the rune is destroyed, the giant can inscribe a frost rune on an object in its possession when it finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the giant fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Ice Slick Aura",
+					"entries": [
+						"A creature that begins its movement on the ground within 30 ft. of the frost giant must succeed on a {@dc 18} Dexterity (Acrobatics) check or continue moving in a straight line until it runs out of movement, collides with a solid object, or leaves the aura."
+					]
+				},
+				{
+					"name": "Battleready Ordning",
+					"entries": [
+						"When initiative is rolled, the jarl and each friendly giant within 60 ft. may move up to its speed."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The frost giant makes two attacks with its runebearded story-axe, one of which it may replace with a use of its pillar of ice."
+					]
+				},
+				{
+					"name": "Runebeared Story-Axe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d12 + 6}) cold damage, and the target is pushed 10 feet away. On a critical hit, the creature's name is inscribed on the axe, and future attacks made against the creature with this weapon are made at advantage. Each other creature within 5 feet of the target must succeed on a {@dc 20} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Hurl Iceberg",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 60/140 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage plus 27({@damage 6d8}) cold damage, and the target is knocked {@condition prone}. Each other creature within 10 feet of the target must succeed on a {@dc 20} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Freezing Fog Breath {@recharge 5}",
+					"entries": [
+						"The giant exhales a gout of freezing fog in a 20-foot radius centered on itself. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 45 ({@damage 10d8}) cold damage on a failed save, or half as much damage on a successful one. The area becomes heavily obscured for the next minute, or until cleared away by a strong wind."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ice Armor (Requires Frost Rune)",
+					"entries": [
+						"When a creature the giant can see makes an attack roll against it, the giant can form a coat of ice around itself, granting it a +6 bonus to its AC against that attack. After the attack hits or misses, the ice shatters, and each creature within 5 feet of the giant must succeed on a {@dc 18} Dexterity saving throw or take 13 ({@damage 3d8}) cold damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Frost giants who master rune magic are known as ice shapers, and their sheer power typically contributes to a meteoric rise in the giants' ordning. Many of them end up as jarls, leading their communities, or as advisers to jarls—often the true power behind the throne. They are usually devoted to Thrym.",
+							"True to their name, these ice shapers manipulate the raw elemental energy of air and water to wield ice in both offense and defense. They summon ice elementals in the shape of wolves, cloak themselves in icy armor, and just as quickly turn that armor into a hail of deadly ice shards."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Frost Giant Ice Shaper.webp"
+						}
+					}
+				]
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The giant can take 3 legendary actions, choosing from the options below. "
+			],
+			"legendary": [
+				{
+					"name": "Grip of Winter",
+					"entries": [
+						"Swirling ice and snow descends in a 10 ft. radius centered on a point within 60 ft. for the next minute. A creature that starts its turn in the area or enters it for the first time on a turn takes 5 ({@damage 1d10}) cold damage and has its movement reduced by half. "
+					]
+				},
+				{
+					"name": "Eyes of the Storm",
+					"entries": [
+						"The giant or one friendly creature within 30 ft. that it can see gains the ability to see unimpeded through fog and snow until the end of its next turn. Sliding "
+					]
+				},
+				{
+					"name": "Cleave",
+					"entries": [
+						"If the giant is not {@condition prone}, it falls {@condition prone}, slides 30 ft., and makes a melee attack. Large or smaller creatures in its path are pushed into the nearest unoccupied space."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		}
+	]
+}
