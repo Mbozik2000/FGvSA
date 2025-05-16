@@ -2418,11 +2418,11 @@
 				{
 					"name": "Eyes of the Storm",
 					"entries": [
-						"The giant or one friendly creature within 30 ft. that it can see gains the ability to see unimpeded through fog and snow until the end of its next turn. Sliding "
+						"The giant or one friendly creature within 30 ft. that it can see gains the ability to see unimpeded through fog and snow until the end of its next turn. "
 					]
 				},
 				{
-					"name": "Cleave",
+					"name": "Sliding Cleave",
 					"entries": [
 						"If the giant is not {@condition prone}, it falls {@condition prone}, slides 30 ft., and makes a melee attack. Large or smaller creatures in its path are pushed into the nearest unoccupied space."
 					]
@@ -2435,6 +2435,781 @@
 			"savingThrowForced": [
 				"constitution",
 				"dexterity"
+			]
+		},
+		{
+			"name": "Bruce, Whalefolk Courier",
+			"source": "FrostGiantsvsStormsArc",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"cetacean"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d8 + 44"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 11,
+			"wis": 12,
+			"cha": 13,
+			"save": {
+				"str": "+8",
+				"con": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Aquan",
+				"Cetacean"
+			],
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The whalefolk deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Echolocation",
+					"entries": [
+						"As an action, you can emit sound waves, gaining blindsight with a range of 60 feet for 1 minute. During this time, you are {@condition deafened} because of the intense sensory feedback."
+					]
+				},
+				{
+					"name": "Whale Speech",
+					"entries": [
+						"The whalefolk can comprehend and verbally communicate with whales."
+					]
+				},
+				{
+					"name": "Jack of All Trades",
+					"entries": [
+						"Bruce adds half of his proficiency bonus (+2) to any ability check with which he is not proficient."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The whalefolk makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Anchor",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage plus 8 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Thunder Bomb (3/Day)",
+					"entries": [
+						"The whalefolk lights a grapefruit-sized bomb and throws it at a point up to 60 feet away, where it explodes. Each creature within a 10-foot-radius sphere centered on that point must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) thunder damage on a failed save, or half as much damage on a successful one. After the whalefolk throws the bomb, roll a {@dice d6}; on a roll of 4 or lower, the whalefolk has no more bombs to throw."
+					]
+				}
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"AQ"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Giff Shock Trooper",
+				"source": "BAM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"A giff shock trooper is trained to mount assaults on enemy strongholds. Each one is adept at softening up the enemy from a distance with firearms before charging into melee to mop up the foes that remain standing."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BAM/Giff Shock Trooper.webp"
+						},
+						"credit": "Robson Michel"
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"bonus": [
+				{
+					"name": "Inspiring Words (5/Day)",
+					"entries": [
+						"When a creature Bruce can see within 60 feet of himself fails an ability check, an attack roll, or a saving throw, Bruce grants the creature magical encouragement. The creature can roll a {@dice d12} and add the number rolled to the total, potentially turning the failure into a success.",
+						"Alternatively, Bruce can expend a use of this feature to add a {@damage 1d12} psychic damage to an attack roll."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Inspiring Parry",
+					"entries": [
+						"In response to being hit by an attack roll, Bruce rolls a {@dice d12} and adds the result to his armor class until the end of his next turn, potentially causing the attack to miss.",
+						"This uses a charge of his Inspiring Words feature."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"T"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Keovith & Keothi, Sleeper's Champion",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 131,
+			"size": [
+				"H"
+			],
+			"type": "giant",
+			"alignment": null,
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"patchwork armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 189,
+				"formula": "14d12 + 98"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 24,
+			"int": 9,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"str": "+11",
+				"con": "+11",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"trait": [
+				{
+					"name": "Extra Heads",
+					"entries": [
+						"The giant has two heads. It has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The giant regains 10 hit points at the start of its turn. If the giant takes acid or fire damage, this trait doesn't function at the start of its next turn. The giant dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Astral Harpoon",
+					"entries": [
+						"The creature wields a magical silver harpoon that can be used as a melee or ranged weapon. The creature is proficient with it. The harpoon deals {@damage 1d8} piercing damage (versatile {@dice 1d10}) and has the thrown (80/320 ft.) property. It can be summoned to the creature's hand as a bonus action. If thrown, the creature can teleport to the harpoon’s location as a bonus action, appearing in the nearest unoccupied space.",
+						"{@condition Ethereal Pinning}. On a hit, the creature can cause the harpoon to become ethereal and embed itself in the target. The target must succeed on a {@dc 18} Wisdom saving throw or become ethereally pinned for 1 minute. While pinned, the target cannot benefit from magical teleportation or planar travel, and its speed is halved as icy ethereal rime clings to the wound. Once removed, the target is immune to this effect for 24 hours.",
+						"If a creature remains pinned for 30 consecutive days, it becomes subject to a Geas spell (save {@dc 18}) as its identity begins to unravel. The creature takes on a haunted, diminished appearance. The Geas ends early if the harpoon is removed, the effect is dismissed as an action, or if remove curse, greater restoration, or wish is cast on the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two Greataxe or Rock attacks."
+					]
+				},
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}26 ({@damage 3d12 + 7}) slashing damage, or 30 ({@damage 3d12 + 11}) slashing damage while raging."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 60/240 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Astral Harpoon",
+					"entries": [
+						"{@atk mw,rw} {@hit 13} to hit, reach 10 ft. or range 80/320 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage in melee, or 11 ({@damage 1d8 + 7}) piercing damage at range, or 12 ({@damage 1d10 + 7}) piercing damage if used with both hands.",
+						"Additionally, the creature can choose to activate {@condition Ethereal Pinning} (see Astral Harpoon trait)."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Vaprak's Rage (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The giant enters a rage. The rage lasts for 1 minute or until the giant is {@condition incapacitated}. While raging, the giant gains the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"The giant has advantage on Strength checks and Strength saving throws.",
+								"When it makes a melee weapon attack, the giant gains a +4 bonus to the damage roll.",
+								"The giant has resistance to bludgeoning, piercing, and slashing damage."
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"coastal"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/frost-giant-everlasting-one.mp3"
+			},
+			"attachedItems": [
+				"greataxe|phb"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Everlasting One",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Frost Giant Everlasting One",
+				"source": "MPMM",
+				"entries": [
+					"To hold its place or rise within the ordning, a frost giant must routinely face mighty foes in single combat. Some seek out magic that will aid them, but enchanted objects can be taken or lost. True greatness relies on personal prowess. Faced with this truth, a frost giant might seek a supernatural gift from Vaprak the Destroyer.",
+					"Vaprak is a ferocious god of strength and hunger also worshiped by some ogres and trolls. He likes to tempt frost giants with dreams of glory followed by nightmares of bloody cannibalism. Those who don't shrink from such visions or report them to priests of Thrym receive more of the same. If a frost giant comes to relish these dreams and nightmares, as some do, Vaprak sets a troll upon a sacred quest to find the frost giant and meet the giant in secret. The troll offers up its own body to be devoured in Vaprak's name. Only the boldest and most determined frost giants can finish such a gory feast.",
+					"After devouring the troll sent by Vaprak, bones and all, a frost giant becomes an everlasting one, gaining tremendous strength, an ill temper, and a troll's regenerative ability. With these gifts, the frost giant can swiftly claim the title of jarl and easily fend off rivals for decades. However, if the frost giant doesn't give enough honor to Vaprak or fails to heed Vaprak's visions, injuries the frost giant sustains heal wrong, resulting in discolored skin; warty scars; and vestigial body parts, such as extra digits, limbs, and even heads. The touch of Vaprak can no longer be hidden then, and the everlasting one is either killed or exiled by their clan. Sometimes small communities of everlasting ones gather and even reproduce, passing the \"blessing\" and worship of Vaprak from one generation to the next."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Frost Giant Everlasting One.webp"
+						},
+						"credit": "Chris Seaman"
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Emperor Thrym",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 145,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "giant",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Runescar Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 80",
+				"average": 184
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 21,
+			"int": 15,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"cha": "+10",
+				"con": "+11",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+13",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Frost Rune",
+					"entries": [
+						"The giant has a frost rune inscribed on a chunk of ice or some other object in its possession. While holding or wearing the object bearing the rune, the giant can use its Ice Wolves action and Ice Armor reaction.",
+						"The object bearing the rune has AC 16; 40 hit points; and immunity to necrotic, poison, and psychic damage. The object regains all its hit points at the end of every turn, but it turns to dust if reduced to 0 hit points or when the giant dies. If the rune is destroyed, the giant can inscribe a frost rune on an object in its possession when it finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Legendary Resistance (6/Day)",
+					"entries": [
+						"If the giant fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Ice Slick Aura",
+					"entries": [
+						"A creature that begins its movement on the ground within 30 ft. of the frost giant must succeed on a {@dc 18} Dexterity (Acrobatics) check or continue moving in a straight line until it runs out of movement, collides with a solid object, or leaves the aura."
+					]
+				},
+				{
+					"name": "Battleready Ordning",
+					"entries": [
+						"When initiative is rolled, the jarl and each friendly giant within 60 ft. may move up to its speed."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The scion has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The frost giant makes two attacks with its runebearded story-axe, one of which it may replace with a use of its pillar of ice."
+					]
+				},
+				{
+					"name": "Runebeared Story-Axe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d12 + 6}) cold damage, and the target is pushed 10 feet away. On a critical hit, the creature's name is inscribed on the axe, and future attacks made against the creature with this weapon are made at advantage. Each other creature within 5 feet of the target must succeed on a {@dc 20} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Freezing Fog Breath {@recharge 5}",
+					"entries": [
+						"The giant exhales a gout of freezing fog in a 20-foot radius centered on itself. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 45 ({@damage 10d8}) cold damage on a failed save, or half as much damage on a successful one. The area becomes heavily obscured for the next minute, or until cleared away by a strong wind."
+					]
+				},
+				{
+					"name": "Freezing Breath {@recharge 5}",
+					"entries": [
+						"The giant exhales a blast of frost in a 90-foot cone. Each creature in that area must make a {@dc 23} Constitution saving throw. On a failed save, a creature takes 52 ({@damage 8d12}) cold damage, and its speed is reduced to 0 until the end of its next turn. On a successful save, a creature takes half as much damage only. If this damage would reduce the target to 0 hit points, the target drops to 1 hit point instead and has the {@condition petrified} condition, turning into a frozen statue.",
+						"If the statue takes bludgeoning damage, it shatters, killing the frozen creature. If the statue would take fire damage, it instead takes no damage and thaws, ending the petrification."
+					]
+				},
+				{
+					"name": "Glacial Upheaval {@recharge 5}",
+					"entries": [
+						"The scion digs its hands into the ground at a point it can see within 30 feet of itself and launches a magically conjured mass of ice into the air. Each creature other than the scion in a 30-foot-radius, 100-foot-high cylinder centered on that point must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 36 ({@damage 8d8}) bludgeoning damage plus 19 ({@damage 3d12}) cold damage and is pushed vertically to the top of the cylinder, at which point the creature falls. On a successful save, a creature takes half as much damage and is pushed to the nearest unoccupied space outside the cylinder with no additional effects.",
+						"At the start of the scion's next turn, a mass of ice plummets to the ground on a point the scion can see within 60 feet of the point the scion dug its hands into. Each creature in a 30-foot-radius, 100-foot-high cylinder centered on that point must succeed on a {@dc 25} Dexterity saving throw or take 18 ({@damage 4d8}) bludgeoning damage plus 18 ({@damage 4d8}) cold damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ice Armor (Requires Frost Rune)",
+					"entries": [
+						"When a creature the giant can see makes an attack roll against it, the giant can form a coat of ice around itself, granting it a +6 bonus to its AC against that attack. After the attack hits or misses, the ice shatters, and each creature within 5 feet of the giant must succeed on a {@dc 18} Dexterity saving throw or take 13 ({@damage 3d8}) cold damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"petrified"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Frost giants who master rune magic are known as ice shapers, and their sheer power typically contributes to a meteoric rise in the giants' ordning. Many of them end up as jarls, leading their communities, or as advisers to jarls—often the true power behind the throne. They are usually devoted to Thrym.",
+							"True to their name, these ice shapers manipulate the raw elemental energy of air and water to wield ice in both offense and defense. They summon ice elementals in the shape of wolves, cloak themselves in icy armor, and just as quickly turn that armor into a hail of deadly ice shards."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Frost Giant Ice Shaper.webp"
+						}
+					}
+				]
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The giant can take 3 legendary actions, choosing from the options below. "
+			],
+			"legendary": [
+				{
+					"name": "Grip of Winter",
+					"entries": [
+						"Swirling ice and snow descends in a 10 ft. radius centered on a point within 60 ft. for the next minute. A creature that starts its turn in the area or enters it for the first time on a turn takes 5 ({@damage 1d10}) cold damage and has its movement reduced by half. "
+					]
+				},
+				{
+					"name": "Eyes of the Storm",
+					"entries": [
+						"The giant or one friendly creature within 30 ft. that it can see gains the ability to see unimpeded through fog and snow until the end of its next turn. "
+					]
+				},
+				{
+					"name": "Sliding Cleave",
+					"entries": [
+						"If the giant is not {@condition prone}, it falls {@condition prone}, slides 30 ft., and makes a melee attack. Large or smaller creatures in its path are pushed into the nearest unoccupied space."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Chilling Mist.",
+					"entries": [
+						"The giant magically conjures a cloud of chilling mist that fills a 30-foot-radius sphere centered on a point it can see within 90 feet of itself. The mist spreads around corners. Each creature in that area must succeed on a {@dc 19} Constitution saving throw or take 28 ({@damage 8d6}) cold damage and be unable to use reactions until the start of its next turn. The mist vanishes at the end of the giant's turn."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Empress Gerti",
+			"source": "FrostGiantsvsStormsArc",
+			"page": 145,
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "giant",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Runescar Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 80",
+				"average": 184
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 21,
+			"int": 15,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"cha": "+10",
+				"con": "+11",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+13",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Giant"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Frost Rune",
+					"entries": [
+						"The giant has a frost rune inscribed on a chunk of ice or some other object in its possession. While holding or wearing the object bearing the rune, the giant can use its Ice Wolves action and Ice Armor reaction.",
+						"The object bearing the rune has AC 16; 40 hit points; and immunity to necrotic, poison, and psychic damage. The object regains all its hit points at the end of every turn, but it turns to dust if reduced to 0 hit points or when the giant dies. If the rune is destroyed, the giant can inscribe a frost rune on an object in its possession when it finishes a short or long rest."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the giant fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Ice Slick Aura",
+					"entries": [
+						"A creature that begins its movement on the ground within 30 ft. of the frost giant must succeed on a {@dc 18} Dexterity (Acrobatics) check or continue moving in a straight line until it runs out of movement, collides with a solid object, or leaves the aura."
+					]
+				},
+				{
+					"name": "Battleready Ordning",
+					"entries": [
+						"When initiative is rolled, the jarl and each friendly giant within 60 ft. may move up to its speed."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The frost giant makes two attacks with its runebearded story-axe, one of which it may replace with a use of its pillar of ice."
+					]
+				},
+				{
+					"name": "Runebeared Story-Axe",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d12 + 6}) cold damage, and the target is pushed 10 feet away. On a critical hit, the creature's name is inscribed on the axe, and future attacks made against the creature with this weapon are made at advantage. Each other creature within 5 feet of the target must succeed on a {@dc 20} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Hurl Iceberg",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 60/140 ft., one target. {@h}29 ({@damage 4d10 + 7}) bludgeoning damage plus 27({@damage 6d8}) cold damage, and the target is knocked {@condition prone}. Each other creature within 10 feet of the target must succeed on a {@dc 20} Dexterity saving throw or take half the attack's damage."
+					]
+				},
+				{
+					"name": "Freezing Fog Breath {@recharge 5}",
+					"entries": [
+						"The giant exhales a gout of freezing fog in a 20-foot radius centered on itself. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 45 ({@damage 10d8}) cold damage on a failed save, or half as much damage on a successful one. The area becomes heavily obscured for the next minute, or until cleared away by a strong wind."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ice Armor (Requires Frost Rune)",
+					"entries": [
+						"When a creature the giant can see makes an attack roll against it, the giant can form a coat of ice around itself, granting it a +6 bonus to its AC against that attack. After the attack hits or misses, the ice shatters, and each creature within 5 feet of the giant must succeed on a {@dc 18} Dexterity saving throw or take 13 ({@damage 3d8}) cold damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG"
+			},
+			"fluff": {
+				"name": "Frost Giant Ice Shaper",
+				"source": "BGG",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Frost giants who master rune magic are known as ice shapers, and their sheer power typically contributes to a meteoric rise in the giants' ordning. Many of them end up as jarls, leading their communities, or as advisers to jarls—often the true power behind the throne. They are usually devoted to Thrym.",
+							"True to their name, these ice shapers manipulate the raw elemental energy of air and water to wield ice in both offense and defense. They summon ice elementals in the shape of wolves, cloak themselves in icy armor, and just as quickly turn that armor into a hail of deadly ice shards."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BGG/Frost Giant Ice Shaper.webp"
+						}
+					}
+				]
+			},
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The giant can take 3 legendary actions, choosing from the options below. While inside of her lair, she can take 5 legendary actions instead."
+			],
+			"legendary": [
+				{
+					"name": "Grip of Winter",
+					"entries": [
+						"Swirling ice and snow descends in a 10 ft. radius centered on a point within 60 ft. for the next minute. A creature that starts its turn in the area or enters it for the first time on a turn takes 5 ({@damage 1d10}) cold damage and has its movement reduced by half. "
+					]
+				},
+				{
+					"name": "Eyes of the Storm",
+					"entries": [
+						"The giant or one friendly creature within 30 ft. that it can see gains the ability to see unimpeded through fog and snow until the end of its next turn. "
+					]
+				},
+				{
+					"name": "Sliding Cleave",
+					"entries": [
+						"If the giant is not {@condition prone}, it falls {@condition prone}, slides 30 ft., and makes a melee attack. Large or smaller creatures in its path are pushed into the nearest unoccupied space."
+					]
+				},
+				{
+					"name": "Wintry Swirl (Costs 2 Actions).",
+					"entries": [
+						"Each creature within 15 feet of the Snow Queen must succeed on a {@dc 18} Constitution saving throw or have vulnerability to cold damage until the end of its next turn. A creature with immunity to cold damage that fails this saving throw instead loses its immunity to cold damage but isn't vulnerable to it."
+					]
+				}
+			],
+			"legendaryActionsLair": 5,
+			"legendaryGroup": {
+				"name": "Snow Queen",
+				"source": "ToB1-2023"
+			},
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"damageTagsLegendary": [
+				"C"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength"
 			]
 		}
 	]
